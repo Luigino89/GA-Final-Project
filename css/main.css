@@ -1,0 +1,485 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Montserrat', sans-serif;
+    background: white;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 19px;
+    letter-spacing: .01em;
+    line-height: 1.4em;
+    text-transform: none;
+    color: rgba(40,26,23,.6)
+}
+
+/* ------HEADER------- */
+header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    margin:10px;
+    width: 100%;
+    
+}
+header h2{
+    font-size: 50px;
+
+}
+@media(max-width:640px){
+    header h2{
+        font-size: 35px;
+    
+    }
+    
+
+};
+.nav-logo h2{
+
+    display:block;
+    font-family: 'Italianno', cursive;
+    font-size: 7vh;
+    align-content: center;
+    justify-content: center;
+    overflow: auto;
+}
+header h5{
+    overflow: auto;
+}
+#view {
+    width: 100%;
+
+}
+nav{
+    position : absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    top:20px;
+    background: rgba(28, 32, 27, 0.2)
+    
+}
+
+.nav-logo{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+@media(max-width:375px){}
+.nav-logo h2 , .nav-logo h5 {
+    
+
+}
+
+ 
+.nav-links {
+    display: flex; 
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.nav-links li  :hover{
+    color: black;
+}
+/*inside header slogan*/
+
+.under-navbar{
+    color:white;
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    top:50%;
+    left:4rem;
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+}
+.under-navbar h3 ,.under-navbar h2  {
+    color:white;
+}
+
+
+ 
+ /* PHONE  FRIENDLY HEADER  AND HAMBURGER DROP DOWN MENU*/
+@media (max-width: 768px) {
+    
+    .line{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+
+    .hamburger {
+        position:absolute;
+        cursor: pointer;
+        right: 5% ;
+        top: 50%;
+        transform: translate(-5%,-50%);
+        z-index: 11;
+    }
+   
+    .nav-links { 
+        top:0;
+        visibility: hidden;
+        position: fixed;
+        background: rgb(28,92,28);
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(100px at 110% -10%);
+        -webkit-clip-path :circle(100px at 110% -10%);
+        transition: all 1s ease-out;
+    }
+        /* add open class for toggle */
+    .nav-links.open {
+        visibility: visible;
+        z-index: 10;
+        clip-path: circle(1000px at 90% 0%);
+        -webkit-clip-path :circle(1000px at 90% 0%);
+        
+    }
+    
+    
+}
+
+            /* --section1 */
+
+p{
+    font-size: 19px;
+}
+h2{
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 65px;
+    color:black;
+}
+h3{
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    margin-bottom: 24px;
+    color: black;
+}
+@media(max-width:640px) {
+
+    h2{
+        font-family: 'Pathway Gothic One', sans-serif;
+        font-size: 28px;
+    }
+    h3{
+        font-family: 'Pacifico', cursive;
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+    
+}
+.welcome{
+    display:grid;
+    grid-template-columns: 2fr  1fr 1fr;
+    justify-content:center;
+    align-items: center;
+    padding: 75px 48px;
+}
+.welcome-left-side{
+    grid-column-start:1 ;
+    grid-column-end: 2;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+#second-line-welcome{
+    margin-bottom: 32px ;
+    
+}
+#who-welcome{
+   margin: 19px 0 ;
+}
+
+.welcome-right-side{
+    grid-column-start: 2;
+    grid-column-end:4;
+    display:flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    padding:20%;
+}
+#aside-welcome-first-line{
+    display:block;
+    margin: 10px;
+   
+}
+#aside-welcome-second-line{
+    margin: 40px 0;
+}
+
+button{
+    padding:17px;
+    background-color:rgb(28, 92, 28);
+    }
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+/* section 2 only photo */
+
+#photo-entrance-img {
+    width: 100%;
+    height: 680px;
+    object-fit:cover;
+    object-position: 50% 30%; 
+}
+
+
+/* about la villa section */
+
+
+.about{
+    display:flex;
+    flex-direction: column;
+    margin: 81px;
+    padding: 75px;
+}
+.About-header{
+    margin-bottom: 32px;
+}
+.About-left-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.container-About-center{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+}
+
+/* change layout changing from grid to flex */
+
+@media(max-width:758px){
+    .container-About-center{
+        display: flex;
+        flex-direction:column-reverse;
+        align-content: center;
+        justify-content: center;
+    }
+    /* align text in the center */
+    #About-why{
+        margin: 35px ;
+        text-align: center;
+    }
+
+}
+
+#About-why{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-right: 35px ;
+    
+}
+#living-room-img{
+    display: block;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 100%;
+    height: auto;
+    
+}
+.button-container{
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    padding: 17px;
+
+
+}
+
+
+/* section netro e biella */
+
+
+.netro {
+    margin:81px;
+    padding: 75px;
+    display:grid;
+    grid-template-columns:  50% 50%;
+    grid-template-rows:0.6fr 1fr 0.1fr ;
+}
+.header-netro{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%
+}
+.container-img-netro{  
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    overflow: hidden;
+}
+
+.container-img-netro img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-p-netro{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin:30px
+}
+#button-netro {
+    grid-row:  3/4 ;
+    grid-column: 1/3;
+}
+@media(max-width:768px){
+
+    .netro {
+        margin:75px 48px;
+        
+       
+    }
+    
+}
+
+/* container two images besides used to  separate */
+
+.images-toghether-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#house-ferdy {
+    max-width: 50%;
+    margin-left: 10px;
+    
+
+    
+}
+#menu-agri{
+    max-width:50% ;
+    margin:10px 0 10px 10px;
+}
+
+/* section extra activities */
+
+
+.activities {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    
+    padding: 75px;
+    justify-content: center;
+    
+}
+@media (max-width:768px){
+    .activities {
+        display:flex;
+        flex-direction: column;
+        padding: 75px;
+        justify-content: center;
+    }
+    .activities-images{
+        width: auto;
+    }
+   
+}
+.activities-header {
+    display: flex;
+    flex-direction: column;
+    grid-row: 1/2;
+    grid-column: 1/4;
+    
+}
+.activities-intro-clip  {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    margin: 1%;
+
+}
+.activities p {
+    padding:10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.activities-images {
+    width: 100%;
+}
+
+
+/* footer */
+
+
+footer {
+    background-color: #262626;
+    display:flex;
+    flex-direction: column;
+    padding: 32px 75px;
+}
+.businnes-info {
+    color:white;
+    display: flex;
+    justify-content: center;
+
+}
+.businnes-info-address {
+    color: rgb(128,128,128);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 20px;
+}
+.businnes-info-address li {
+    margin:10px 10px 0 0;
+
+}
+footer h3 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.footer-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+footer button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
